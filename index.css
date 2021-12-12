@@ -4,11 +4,15 @@
     background-color: lightblue;
     font-size: large;
     padding-bottom: 100px;
+    background-image: ;
 }
 .description{
     font-style: italic;
 }
 #title{
-    font-size: 700px;
+    font-size: 40px;
+}
+.col-sm-6 pt-5{
+    
 }
 
