@@ -20,9 +20,8 @@ so as to access the project on ur local files, you have to clone it using the st
 3. this will clone the repository  into your local browser
 ### Tech used
 1. HTMLs
-2.Javasript
-3. CSS
-4. Git
+2. CSS
+3. Javascript
 ### license
 The project is under the  [MIT](license) license.
 ### live site

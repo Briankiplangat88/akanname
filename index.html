@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan -Names</title>
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     <div class="container">
         <div>
-        <p id="title">KNOW YOUR DAY OF BIRTH AND AKAN NAME?</p>
+        <p id="title">  KNOW YOUR DAY OF BIRTH AND AKAN NAME?</p>
         </div>
         <div class="description">
             welcome to this website,many people doesn't know the day of the week they were born. <br> 
@@ -23,26 +24,22 @@
 
 
         </div>
-        <div class="container" id="maindiv">
-            <div class="row justify-content-between" id="img">
-                <div class="col-sm-6" id="fingerprint">
-                <img src="akaa.jpg" alt="">
-                </div>
-                <div class="col-sm-6 pt-5">
+        <div class="container">
+                <div class="body">
                     <fieldset>
-                        <legend class="text-light">Enter Birthday:</legend>
+                        <legend class="text-light">Know your Birthday:</legend>
                             <form class="main-form">
                                 <div class="date form-group">
-                                    <label for="date" class="text-light">Date:<span class="text-danger"> *</span></label></br>
-                                    <input type="text" id="bdate" name="bdate" class="form-control" placeholder="18"></br>
-                                    <label for="birthdate" class="text-light">Month:<span class="text-danger"> *</span></label></br>
-                                    <input type="text" id="bdat" name="bdate" class="form-control" placeholder="03"></br>
-                                    <label for="birthdate" class="text-light">Year:<span class="text-danger"> *</span></label></br>
-                                    <input type="text" id="bdae" name="bdate" class="form-control" placeholder="1999">
+                                    <label for="date" class="text-light">Date:</label></br>
+                                    <input type="text" id="bdate" name="bdate" class="form-control" placeholder="3"></br>
+                                    <label for="birthdate" class="text-light">month: </label></br>
+                                    <input type="text" id="bdat" name="bdate" class="form-control" placeholder="09"></br>
+                                    <label for="birthdate" class="text-light">Year:</label></br>
+                                    <input type="text" id="bdae" name="bdate" class="form-control" placeholder="1989">
                                 </div>
                                 <div id="genders" class="form-group">
-                                    <input type="radio" name="gender" value="male" required><span class="text-light"> Male</span></br>
-                                    <input type="radio" name="gender" value="female" required><span class="text-light"> Female</span>
+                                    <input type="radio" name="gender" value="male" required><class="text-light"> Male</br>
+                                    <input type="radio" name="gender" value="female" required><span class="text-light"> Female</br>
                                 </div>
                                 <div>
                                     <input type="submit" id="submit" class="" value=" Akan Name" onclick="akanGenerate();">

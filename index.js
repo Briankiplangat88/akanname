@@ -1,5 +1,6 @@
+
 function akanGenerate(){
-    var genderRadio = document.querySelectorAll('input[name="gender"]');
+    var gendertypo = document.querySelectorAll('input[name="gender"]');
     let ChosenValue;
     var inputDate = document.getElementById('bdate').value;
     var inputMonth= document.getElementById('bdat').value;
@@ -10,7 +11,7 @@ function akanGenerate(){
     var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
     const submit = document.querySelector('#submit');
         // checking for the gender
-        for (const chosenGender of genderRadio) {
+        for (const chosenGender of gendertypo) {
             if(chosenGender.checked) {
                 chosenValue = chosenGender.value;
                 break;
@@ -18,13 +19,13 @@ function akanGenerate(){
         }
         // Checking for the persons day of birth
         if(inputDate<=0 || inputDate>30){
-            alert("Please enter the Correct date");
+            alert("invalid choice try again");
             } 
             else if(inputMonth<=0 || inputMonth>12){
-            alert("Please enter the correct Month");
+            alert("invalid choice try again");
             }
-            else if(inputYear<999 || inputYear > new Date().getFullYear()){
-            alert("please enter the correct year");
+            else if(inputYear<1800 || inputYear > new Date().getFullYear()){
+            alert("invalid choice try again");
             }
             else {
             var trueBirthdayIndex = parseInt((((century/4) - 2*century-1)+((5*inputYear/4))+((26*(inputMonth+1)/10))+inputDate)%7);
@@ -32,54 +33,55 @@ function akanGenerate(){
                 if (chosenValue == 'male'){
                     // var birthday = prompt('Enter the date:');
                     if (trueBirthdayIndex == 0){
-                        alert("Your Akan Name is: " + maleAkan[0] + " and you were born on "+days[0])
+                        alert("Your Akan Name is: " + maleAkan[0] + " and you were born on a "+days[0])
                     }
                     else if (trueBirthdayIndex == 1){
-                        alert("Your Akan Name is: " + maleAkan[1] + " and you were born on "+days[1])
+                        alert("Your Akan Name is: " + maleAkan[1] + " and you were born on a "+days[1])
                     }
                     else if (trueBirthdayIndex == 2){
-                        alert("Your Akan Name is: " + maleAkan[2] + " and you were born on "+days[2])
+                        alert("Your Akan Name is: " + maleAkan[2] + " and you were born on a "+days[2])
                     }
                     else if (trueBirthdayIndex == 3){
-                        alert("Your Akan Name is: " + maleAkan[3] + " and you were born on "+days[3])
+                        alert("Your Akan Name is: " + maleAkan[3] + " and you were born on a "+days[3])
                     }
                     else if (trueBirthdayIndex == 4){
-                        alert("Your Akan Name is: " + maleAkan[4] + " and you were born on "+days[4])
+                        alert("Your Akan Name is: " + maleAkan[4] + " and you were born on a "+days[4])
                     }
                     else if (trueBirthdayIndex == 5){
-                        alert("Your Akan Name is: " + maleAkan[5] + " You were born on "+days[5])
+                        alert("Your Akan Name is: " + maleAkan[5] + "  and you were born on a "+days[5])
                     }
                     else if (trueBirthdayIndex == 6){
-                        alert("Your Akan Name is: " + maleAkan[6] + " and you were born on "+days[6])
+                        alert("Your Akan Name is: " + maleAkan[6] + " and you were born on a "+days[6])
                     }
                     else {
-                        alert("Please check you date and try again")
+                        alert("invalid choice try again")
+                        
                     }
                 }
                 else{
                     if (trueBirthdayIndex == 0){
-                        alert("Your Akan Name is: " + femaleAkan[0] + " and you were born on "+days[0])
+                        alert("Your Akan Name is: " + femaleAkan[0] + " and you were born on a "+days[0])
                     }
                     else if (trueBirthdayIndex == 1){
-                        alert("Your Akan Name is: " + femaleAkan[1] + " and you were born on "+days[1])
+                        alert("Your Akan Name is: " + femaleAkan[1] + " and you were born on a "+days[1])
                     }
                     else if (trueBirthdayIndex == 2){
-                        alert("Your Akan Name is: " + femaleAkan[2] + " and you were born on "+days[2])
+                        alert("Your Akan Name is: " + femaleAkan[2] + " and you were born on a "+days[2])
                     }
                     else if (trueBirthdayIndex == 3){
-                        alert("Your Akan Name is: " + femaleAkan[3] + " and you were born on "+days[3])
+                        alert("Your Akan Name is: " + femaleAkan[3] + " and you were born on a "+days[3])
                     }
                     else if (trueBirthdayIndex == 4){
-                        alert("Your Akan Name is: " + femaleAkan[4] + " and you were born on "+days[4])
+                        alert("Your Akan Name is: " + femaleAkan[4] + " and you were born on a "+days[4])
                     }
                     else if (trueBirthdayIndex == 5){
-                        alert("Your Akan Name is: " + femaleAkan[5] + " and you were born on "+days[5])
+                        alert("Your Akan Name is: " + femaleAkan[5] + " and you were born on a "+days[5])
                     }
                     else if(trueBirthdayIndex == 6){
-                        alert(femaleAkan[6] + " and you were born on "+days[6])
+                        alert(femaleAkan[6] + " and you were born on  "+days[6])
                     }
                     else {
-                        alert("Please check Your date and try again")
+                        alert("invalid choice try again")
                     }
                 }
         }
